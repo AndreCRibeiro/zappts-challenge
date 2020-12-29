@@ -39,7 +39,7 @@ export const Title = styled.h1`
   color: #000;
   font: normal normal 900 35px/48px Avenir;
   align-self: flex-end;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 `;
 
 export const Form = styled.form`
@@ -52,11 +52,10 @@ export const Form = styled.form`
   h1 {
     color: #707070;
     margin-bottom: 55px;
-    font-family: Muli;
+    font: normal normal normal 30px/38px Muli;
     font-size: 30px;
     opacity: 1;
-    padding: 15px 30px 0px 30px;
-    width: 100%;
+    padding: 15px 55px 0px 55px;
   }
 
   p {
@@ -77,14 +76,6 @@ export const Form = styled.form`
     width: 100%;
     padding: 0px 0px 5px 15px;
     font: normal normal normal 16px/20px Muli;
-  }
-
-  small {
-    font-size: 14px;
-    color: #707070;
-    align-self: flex-end;
-    margin-top: 12px;
-    font-family: normal normal normal 14px/18px Muli;
   }
 
   button {
@@ -155,13 +146,13 @@ export const GoogleButton = styled.button.attrs(() => ({
   }
 `;
 
-export const BottomContainer = styled.div`
+export const TermsContainer = styled.div`
   width: 65%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  margin: 30px 0px 30px 0px;
+  margin: 30px 0px 0px 0px;
 
   a {
     color: rgba(169, 197, 186, 0.8);
@@ -182,6 +173,38 @@ export const BottomContainer = styled.div`
     font-size: 14px;
     color: #707070;
     margin: 0px 3px 0px 3px;
+    font-family: normal normal normal 14px/18px Muli;
+  }
+`;
+
+export const BottomContainer = styled.div`
+  width: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: ${(props) => (props.last ? '30px 0px 30px 0px' : '0px')};
+
+  a {
+    color: rgba(169, 197, 186, 0.8);
+    font-size: 14px;
+    margin: 0px 4px 0px 4px;
+
+    &:hover {
+      color: rgba(169, 197, 186, 1);
+    }
+  }
+
+  p {
+    font-size: 14px;
+    color: #707070;
+    font-family: normal normal normal 14px/18px Muli;
+  }
+
+  b {
+    font-size: 14px;
+    color: #707070;
+    margin: 0px 1px 0px 4px;
     font-family: normal normal normal 14px/18px Muli;
   }
 `;
