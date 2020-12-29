@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import GoogleLogin from 'react-google-login';
 
 import {
   Container,
@@ -7,6 +9,8 @@ import {
   FormContainer,
   Title,
   Form,
+  DividerContainer,
+  BottomContainer,
 } from './styles';
 
 const SignIn = () => (
@@ -20,10 +24,21 @@ const SignIn = () => (
           <p>Users name or Email</p>
           <input type="text" placeholder="exemplo@email.com" />
           <p>Password</p>
-          <input type="password" placeholder="********" />
+          <input type="password" placeholder="**************" />
           <small>Forgot password?</small>
-          <button type="submit">Sign In</button>
+          <button type="submit">Sign in</button>
         </Form>
+        <DividerContainer>
+          <div />
+          <p>Or</p>
+          <div />
+        </DividerContainer>
+        <GoogleLogin buttonText="Sign in with Google" />
+        <BottomContainer>
+          <p>New</p>
+          <b>Invision?</b>
+          <Link to="/signup">Create Account</Link>
+        </BottomContainer>
       </FormContainer>
     </RightContainer>
   </Container>

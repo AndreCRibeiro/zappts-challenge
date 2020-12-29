@@ -101,16 +101,52 @@ export const Form = styled.form`
   }
 `;
 
-export const SubmitButton = styled.button.attrs((props) => ({
-  type: 'submit',
-  disabled: props.loading,
-}))`
-  background: #7159c1;
-  border: 0;
-  padding: 0 15px;
-  border-radius: 4px;
-
+export const DividerContainer = styled.div`
+  width: 65%;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 30px 0px 30px 0px;
+
+  div {
+    height: 1px;
+    background: #707070;
+    display: flex;
+    width: 100%;
+  }
+
+  p {
+    font-size: 14px;
+    color: #707070;
+    margin: 0px 10px 0px 10px;
+    font-family: normal normal normal 14px/18px Muli;
+  }
+`;
+
+export const BottomContainer = styled.div`
+  width: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 30px 0px 30px 0px;
+
+  a {
+    color: #a9c5ba;
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 14px;
+    color: #707070;
+    font-family: normal normal normal 14px/18px Muli;
+  }
+
+  b {
+    font-size: 14px;
+    color: #707070;
+    margin: 0px 3px 0px 3px;
+    font-family: normal normal normal 14px/18px Muli;
+  }
 `;
