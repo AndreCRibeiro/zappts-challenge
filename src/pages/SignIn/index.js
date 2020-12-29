@@ -1,5 +1,7 @@
 import React from 'react';
 
-const SignIn = () => <h1>SignIn</h1>;
+import { Title } from './styles';
+
+const SignIn = () => <Title>SignIn</Title>;
 
 export default SignIn;
