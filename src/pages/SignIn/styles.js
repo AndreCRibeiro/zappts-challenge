@@ -67,18 +67,6 @@ export const Form = styled.form`
     align-self: flex-start;
   }
 
-  input {
-    flex: 1;
-    display: flex;
-    font-size: 16px;
-    border: none;
-    border-bottom: 1px solid grey;
-    background: #eee;
-    width: 100%;
-    padding: 0px 0px 5px 15px;
-    font: normal normal normal 16px/20px Muli;
-  }
-
   small {
     font-size: 14px;
     color: #707070;
@@ -104,6 +92,19 @@ export const Form = styled.form`
       background: rgba(112, 112, 112, 1);
     }
   }
+`;
+
+export const Input = styled.input`
+  flex: 1;
+  display: flex;
+  font-size: 16px;
+  border: none;
+  border-bottom: ${(props) =>
+    props.error ? '2px solid red' : '1px solid grey'};
+  background: #eee;
+  width: 100%;
+  padding: 0px 0px 5px 15px;
+  font: normal normal normal 16px/20px Muli;
 `;
 
 export const DividerContainer = styled.div`
