@@ -13,6 +13,7 @@ import {
   FormContainer,
   Title,
   Input,
+  Text,
   Form,
   DividerContainer,
   GoogleButton,
@@ -30,7 +31,7 @@ const schema = Yup.object().shape({
 
   password: Yup.string()
     .required('Senha é obrigatória')
-    .min(6, 'Senha inválida'),
+    .min(6, 'Senha muito curta, mínimo 6 caracteres'),
 });
 
 const SignIn = () => {
@@ -56,8 +57,11 @@ const SignIn = () => {
               ref={register}
               type="text"
               placeholder="exemplo@email.com"
-              error={errors?.email}
+              error={errors.email?.message}
             />
+            {errors.email?.message && (
+              <Text error>{errors?.email.message}</Text>
+            )}
             <p>Password</p>
             <Input
               name="password"
@@ -66,6 +70,9 @@ const SignIn = () => {
               placeholder="**************"
               error={errors.password?.message}
             />
+            {errors.password?.message && (
+              <Text error>{errors?.password.message}</Text>
+            )}
             <small>Forgot password?</small>
             <button type="submit">Sign in</button>
           </Form>

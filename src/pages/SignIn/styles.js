@@ -60,7 +60,7 @@ export const Form = styled.form`
   }
 
   p {
-    color: #707070;
+    color: ${(props) => (props.error ? 'red' : '#707070')};
     font-size: 14px;
     font: normal normal normal 14px/18px Muli;
     margin: 10px 0px 5px 0px;
@@ -105,6 +105,13 @@ export const Input = styled.input`
   width: 100%;
   padding: 0px 0px 5px 15px;
   font: normal normal normal 16px/20px Muli;
+`;
+
+export const Text = styled.b`
+  color: rgba(255, 0, 0, 0.6);
+  font-size: 13px;
+  align-self: flex-start;
+  padding: 0px 0px 0px 15px;
 `;
 
 export const DividerContainer = styled.div`
