@@ -26,7 +26,7 @@ export const RightContainer = styled.div`
 `;
 
 export const FormContainer = styled.div`
-  width: 50%;
+  width: 80%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -39,7 +39,7 @@ export const Title = styled.h1`
   color: #000;
   font: normal normal 900 35px/48px Avenir;
   align-self: flex-end;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 `;
 
 export const Form = styled.form`
@@ -51,7 +51,7 @@ export const Form = styled.form`
 
   h1 {
     color: #707070;
-    margin-bottom: 75px;
+    margin-bottom: 55px;
     font: normal normal normal 30px/38px Muli;
     font-size: 30px;
     opacity: 1;
@@ -87,7 +87,7 @@ export const Form = styled.form`
   }
 
   button {
-    background: #707070;
+    background: rgba(112, 112, 112, 0.8);
     margin-top: 30px;
     border: 0;
     padding: 0 15px;
@@ -97,7 +97,11 @@ export const Form = styled.form`
     justify-content: center;
     align-items: center;
     width: 50%;
-    height: 45px;
+    height: 40px;
+
+    &:hover {
+      background: rgba(112, 112, 112, 1);
+    }
   }
 `;
 
@@ -111,16 +115,42 @@ export const DividerContainer = styled.div`
 
   div {
     height: 1px;
-    background: #707070;
+    background: rgba(112, 112, 112, 0.3);
     display: flex;
-    width: 100%;
+    width: 25%;
   }
 
   p {
     font-size: 14px;
-    color: #707070;
+    color: rgba(112, 112, 112, 0.8);
     margin: 0px 10px 0px 10px;
     font-family: normal normal normal 14px/18px Muli;
+  }
+`;
+
+export const GoogleButton = styled.button.attrs(() => ({
+  type: 'submit',
+}))`
+  background: #eee;
+  border: 0;
+  padding: 0 15px;
+  margin: 0px 0px 3px 10px;
+  border-radius: 50px;
+  height: 45px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+
+  img {
+    margin: 0px 10px 0px 10px;
+  }
+
+  p {
+    color: #000;
+    margin: 0px 5px 0px 13px;
+    font: normal normal normal 18px/22px Lato;
   }
 `;
 
@@ -133,8 +163,12 @@ export const BottomContainer = styled.div`
   margin: 30px 0px 30px 0px;
 
   a {
-    color: #a9c5ba;
+    color: rgba(169, 197, 186, 0.8);
     font-size: 14px;
+
+    &:hover {
+      color: rgba(169, 197, 186, 1);
+    }
   }
 
   p {

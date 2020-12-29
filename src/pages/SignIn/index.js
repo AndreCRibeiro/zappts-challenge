@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import GoogleLogin from 'react-google-login';
+import Google from '../../assets/Img/google.svg';
 
 import {
   Container,
@@ -10,6 +10,7 @@ import {
   Title,
   Form,
   DividerContainer,
+  GoogleButton,
   BottomContainer,
 } from './styles';
 
@@ -17,8 +18,8 @@ const SignIn = () => (
   <Container>
     <ImageContainer />
     <RightContainer>
-      <Title>Invision</Title>
       <FormContainer>
+        <Title>Invision</Title>
         <Form>
           <h1>Welcome to Invision</h1>
           <p>Users name or Email</p>
@@ -33,7 +34,10 @@ const SignIn = () => (
           <p>Or</p>
           <div />
         </DividerContainer>
-        <GoogleLogin buttonText="Sign in with Google" />
+        <GoogleButton>
+          <img src={Google} alt={Google} />
+          <p>Sign in with Google</p>
+        </GoogleButton>
         <BottomContainer>
           <p>New</p>
           <b>Invision?</b>
