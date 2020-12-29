@@ -17,13 +17,18 @@ export default createGlobalStyle`
     -webkit-font-smoothing: antialiased !important;
   }
 
-  body, input, button {
-    color: #222;
-    font-size: 14px;
+  body, input {
+    color: #000;
+    font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
+    font: normal normal normal 16px/20px Muli;
   }
 
   button {
+    color: #FFF;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font: normal normal bold 16px/20px Muli;
     cursor: pointer;
   }
 `;
