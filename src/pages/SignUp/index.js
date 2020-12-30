@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import { schema } from './validation';
@@ -31,7 +32,12 @@ const SignUp = () => {
     resolver: yupResolver(schema),
   });
 
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => {
+    console.log({ data });
+    toast.success('Usuário cadastrado com sucesso!!', {
+      position: toast.POSITION.TOP_CENTER,
+    });
+  };
 
   return (
     <Container>
