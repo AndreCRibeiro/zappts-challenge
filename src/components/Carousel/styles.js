@@ -59,7 +59,6 @@ export const CarouselImageContainer = styled.div`
 
 export const CarouselImage = styled.img`
   height: 555px;
-  width: 100%;
 `;
 
 export const CarouselTextContainer = styled.div`
