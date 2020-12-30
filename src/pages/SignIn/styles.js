@@ -26,6 +26,10 @@ export const RightContainer = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  @media only screen and (max-width: 1224px) {
+    width: 100%;
+  }
 `;
 
 export const FormContainer = styled.div`
