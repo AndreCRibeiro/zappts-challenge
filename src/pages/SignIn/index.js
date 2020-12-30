@@ -30,8 +30,6 @@ import {
 const SignIn = () => {
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' });
 
-  console.log({ isTabletOrMobile });
-
   const { register, handleSubmit, errors } = useForm({
     resolver: yupResolver(schema),
   });

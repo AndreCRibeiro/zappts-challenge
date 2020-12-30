@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
+import { useMediaQuery } from 'react-responsive';
 import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { useForm } from 'react-hook-form';
@@ -28,6 +29,8 @@ import {
 } from './styles';
 
 const SignUp = () => {
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' });
+
   const { register, handleSubmit, errors } = useForm({
     resolver: yupResolver(schema),
   });
@@ -40,14 +43,16 @@ const SignUp = () => {
 
   return (
     <Container>
-      <ImageContainer>
-        <Carousel
-          image1={Image1}
-          image2={Image2}
-          image3={Image3}
-          image4={Image4}
-        />
-      </ImageContainer>
+      {!isTabletOrMobile && (
+        <ImageContainer>
+          <Carousel
+            image1={Image1}
+            image2={Image2}
+            image3={Image3}
+            image4={Image4}
+          />
+        </ImageContainer>
+      )}
       <RightContainer>
         <FormContainer>
           <Title>Invision</Title>

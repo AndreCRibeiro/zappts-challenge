@@ -26,10 +26,14 @@ export const RightContainer = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  @media only screen and (max-width: 1224px) {
+    width: 100%;
+  }
 `;
 
 export const FormContainer = styled.div`
-  width: 80%;
+  width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -40,9 +44,13 @@ export const FormContainer = styled.div`
 export const Title = styled.h1`
   font-size: 35px;
   color: #000;
-  font: normal normal 900 35px/48px Avenir;
+  font-family: Avenir;
   align-self: flex-end;
-  padding-bottom: 20px;
+  padding: 0px 15px 10px 0px;
+
+  @media only screen and (max-width: 1224px) {
+    padding: 10px 15px 10px 0px;
+  }
 `;
 
 export const Form = styled.form`

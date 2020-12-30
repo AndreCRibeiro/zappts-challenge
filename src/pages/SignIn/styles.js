@@ -63,7 +63,8 @@ export const Form = styled.form`
     font-size: 30px;
     opacity: 1;
     padding: 15px 30px 0px 30px;
-    width: 100%;
+    text-align: center;
+    line-height: 1.1;
   }
 
   p {
