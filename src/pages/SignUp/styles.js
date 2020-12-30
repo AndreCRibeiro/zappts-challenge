@@ -14,6 +14,9 @@ export const ImageContainer = styled.div`
   width: 50%;
   height: 100%;
   background: #a9c5ba;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const RightContainer = styled.div`
