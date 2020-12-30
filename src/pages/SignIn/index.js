@@ -5,20 +5,13 @@ import * as Yup from 'yup';
 import { setLocale } from 'yup';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
-// import Slider from 'react-slick';
 import Google from '../../assets/Img/google.svg';
 import Data from '../../assets/Img/Data.png';
+import Carousel from '../../components/Carousel';
 
 import {
   Container,
   ImageContainer,
-  CarouselContainer,
-  SliderTeste,
-  CarouselImage,
-  CarouselTextContainer,
-  CarouselImageContainer,
-  CarouselHeader,
-  CarouselText,
   RightContainer,
   FormContainer,
   Title,
@@ -51,66 +44,10 @@ const SignIn = () => {
 
   const onSubmit = (data) => console.log(data);
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
   return (
     <Container>
       <ImageContainer>
-        <SliderTeste {...settings} arrows={false}>
-          <CarouselContainer>
-            <CarouselImageContainer>
-              <CarouselImage src={Data} alt={Data} />
-            </CarouselImageContainer>
-            <CarouselTextContainer>
-              <CarouselHeader>Marcenas mattis egestas</CarouselHeader>
-              <CarouselText>
-                Erdum et malesuada fames ac ante ileum primmer in faucibus
-                uspendisse porta.
-              </CarouselText>
-            </CarouselTextContainer>
-          </CarouselContainer>
-          <CarouselContainer>
-            <CarouselImageContainer>
-              <CarouselImage src={Data} alt={Data} />
-            </CarouselImageContainer>
-            <CarouselTextContainer>
-              <CarouselHeader>Marcenas mattis egestas</CarouselHeader>
-              <CarouselText>
-                Erdum et malesuada fames ac ante ileum primmer in faucibus
-                uspendisse porta.
-              </CarouselText>
-            </CarouselTextContainer>
-          </CarouselContainer>
-          <CarouselContainer>
-            <CarouselImageContainer>
-              <CarouselImage src={Data} alt={Data} />
-            </CarouselImageContainer>
-            <CarouselTextContainer>
-              <CarouselHeader>Marcenas mattis egestas</CarouselHeader>
-              <CarouselText>
-                Erdum et malesuada fames ac ante ileum primmer in faucibus
-                uspendisse porta.
-              </CarouselText>
-            </CarouselTextContainer>
-          </CarouselContainer>
-          <CarouselContainer>
-            <CarouselImageContainer>
-              <CarouselImage src={Data} alt={Data} />
-            </CarouselImageContainer>
-            <CarouselTextContainer>
-              <CarouselHeader>Marcenas mattis egestas</CarouselHeader>
-              <CarouselText>
-                Erdum et malesuada fames ac ante ileum primmer in faucibus
-                uspendisse porta.
-              </CarouselText>
-            </CarouselTextContainer>
-          </CarouselContainer>
-        </SliderTeste>
+        <Carousel image1={Data} image2={Data} image3={Data} image4={Data} />
       </ImageContainer>
       <RightContainer>
         <FormContainer>
