@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Slider from 'react-slick';
 
 export const Container = styled.div`
   display: flex;
@@ -10,10 +11,64 @@ export const Container = styled.div`
   height: 100vh;
 `;
 
+export const SliderTeste = styled(Slider)`
+  width: 100%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
 export const ImageContainer = styled.div`
   width: 50%;
   height: 100%;
   background: #a9c5ba;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const CarouselContainer = styled.div`
+  width: 500px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const CarouselImageContainer = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+`;
+
+export const CarouselImage = styled.img``;
+
+export const CarouselTextContainer = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10px;
+`;
+
+export const CarouselHeader = styled.p`
+  color: #fff;
+  font-family: Muli;
+  font-size: 30px;
+  margin-top: 25px;
+`;
+
+export const CarouselText = styled.small`
+  color: #fff;
+  font-family: Muli;
+  font-size: 17px;
+  width: 50%;
+  text-align: center;
+  margin-top: 25px;
 `;
 
 export const RightContainer = styled.div`
@@ -37,7 +92,7 @@ export const FormContainer = styled.div`
 export const Title = styled.h1`
   font-size: 35px;
   color: #000;
-  font: normal normal 900 35px/48px Avenir;
+  font-family: Avenir;
   align-self: flex-end;
   margin-bottom: 20px;
 `;
@@ -62,7 +117,7 @@ export const Form = styled.form`
   p {
     color: ${(props) => (props.error ? 'red' : '#707070')};
     font-size: 14px;
-    font: normal normal normal 14px/18px Muli;
+    font-family: Muli;
     margin: 10px 0px 5px 0px;
     align-self: flex-start;
   }
@@ -72,7 +127,7 @@ export const Form = styled.form`
     color: #707070;
     align-self: flex-end;
     margin-top: 12px;
-    font-family: normal normal normal 14px/18px Muli;
+    font-family: Muli;
   }
 
   button {
@@ -104,7 +159,7 @@ export const Input = styled.input`
   background: #eee;
   width: 100%;
   padding: 0px 0px 5px 15px;
-  font: normal normal normal 16px/20px Muli;
+  font-family: Muli;
 `;
 
 export const Text = styled.b`
@@ -159,7 +214,7 @@ export const GoogleButton = styled.button.attrs(() => ({
   p {
     color: #000;
     margin: 0px 5px 0px 13px;
-    font: normal normal normal 18px/22px Lato;
+    font-family: Lato;
   }
 `;
 
@@ -183,13 +238,13 @@ export const BottomContainer = styled.div`
   p {
     font-size: 14px;
     color: #707070;
-    font-family: normal normal normal 14px/18px Muli;
+    font-family: Muli;
   }
 
   b {
     font-size: 14px;
     color: #707070;
     margin: 0px 3px 0px 3px;
-    font-family: normal normal normal 14px/18px Muli;
+    font-family: Muli;
   }
 `;

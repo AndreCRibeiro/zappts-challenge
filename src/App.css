@@ -12,3 +12,9 @@
   src: url('./assets/fonts/Muli.ttf') format('opentype');
 }
 
+@font-face {
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./assets/fonts/Metropolis-Regular.otf') format('opentype');
+}

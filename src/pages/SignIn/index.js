@@ -1,14 +1,24 @@
+/* eslint-disable react/jsx-props-no-spreading */
 import React from 'react';
 import { Link } from 'react-router-dom';
 import * as Yup from 'yup';
 import { setLocale } from 'yup';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
+// import Slider from 'react-slick';
 import Google from '../../assets/Img/google.svg';
+import Data from '../../assets/Img/Data.png';
 
 import {
   Container,
   ImageContainer,
+  CarouselContainer,
+  SliderTeste,
+  CarouselImage,
+  CarouselTextContainer,
+  CarouselImageContainer,
+  CarouselHeader,
+  CarouselText,
   RightContainer,
   FormContainer,
   Title,
@@ -43,9 +53,56 @@ const SignIn = () => {
 
   console.log({ errors });
   console.log(errors.password?.message);
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
   return (
     <Container>
-      <ImageContainer />
+      <ImageContainer>
+        <SliderTeste {...settings} arrows={false}>
+          <CarouselContainer>
+            <CarouselImageContainer>
+              <CarouselImage src={Data} alt={Data} />
+            </CarouselImageContainer>
+            <CarouselTextContainer>
+              <CarouselHeader>Marcenas mattis egestas</CarouselHeader>
+              <CarouselText>
+                Erdum et malesuada fames ac ante ileum primmer in faucibus
+                uspendisse porta.
+              </CarouselText>
+            </CarouselTextContainer>
+          </CarouselContainer>
+          <CarouselContainer>
+            <CarouselImageContainer>
+              <CarouselImage src={Data} alt={Data} />
+            </CarouselImageContainer>
+            <CarouselTextContainer>
+              <CarouselHeader>Marcenas mattis egestas</CarouselHeader>
+              <CarouselText>
+                Erdum et malesuada fames ac ante ileum primmer in faucibus
+                uspendisse porta.
+              </CarouselText>
+            </CarouselTextContainer>
+          </CarouselContainer>
+          <CarouselContainer>
+            <CarouselImageContainer>
+              <CarouselImage src={Data} alt={Data} />
+            </CarouselImageContainer>
+            <CarouselTextContainer>
+              <CarouselHeader>Marcenas mattis egestas</CarouselHeader>
+              <CarouselText>
+                Erdum et malesuada fames ac ante ileum primmer in faucibus
+                uspendisse porta.
+              </CarouselText>
+            </CarouselTextContainer>
+          </CarouselContainer>
+        </SliderTeste>
+      </ImageContainer>
       <RightContainer>
         <FormContainer>
           <Title>Invision</Title>

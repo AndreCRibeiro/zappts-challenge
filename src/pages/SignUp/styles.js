@@ -52,7 +52,7 @@ export const Form = styled.form`
   h1 {
     color: #707070;
     margin-bottom: 55px;
-    font: normal normal normal 30px/38px Muli;
+    font-family: Muli;
     font-size: 30px;
     opacity: 1;
     padding: 15px 55px 0px 55px;
@@ -61,7 +61,7 @@ export const Form = styled.form`
   p {
     color: #707070;
     font-size: 14px;
-    font: normal normal normal 14px/18px Muli;
+    font-family: Muli;
     margin: 10px 0px 5px 0px;
     align-self: flex-start;
   }
@@ -95,7 +95,7 @@ export const Input = styled.input`
   background: #eee;
   width: 100%;
   padding: 0px 0px 5px 15px;
-  font: normal normal normal 16px/20px Muli;
+  font-family: Muli;
 `;
 
 export const Text = styled.b`
@@ -150,7 +150,7 @@ export const GoogleButton = styled.button.attrs(() => ({
   p {
     color: #000;
     margin: 0px 5px 0px 13px;
-    font: normal normal normal 18px/22px Lato;
+    font-family: Lato;
   }
 `;
 
@@ -174,14 +174,14 @@ export const TermsContainer = styled.div`
   p {
     font-size: 14px;
     color: #707070;
-    font-family: normal normal normal 14px/18px Muli;
+    font-family: Muli;
   }
 
   b {
     font-size: 14px;
     color: #707070;
     margin: 0px 3px 0px 3px;
-    font-family: normal normal normal 14px/18px Muli;
+    font-family: Muli;
   }
 `;
 
@@ -206,13 +206,13 @@ export const BottomContainer = styled.div`
   p {
     font-size: 14px;
     color: #707070;
-    font-family: normal normal normal 14px/18px Muli;
+    font-family: Muli;
   }
 
   b {
     font-size: 14px;
     color: #707070;
     margin: 0px 1px 0px 4px;
-    font-family: normal normal normal 14px/18px Muli;
+    font-family: Muli;
   }
 `;
