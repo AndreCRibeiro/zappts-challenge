@@ -57,7 +57,10 @@ export const CarouselImageContainer = styled.div`
   flex-direction: column;
 `;
 
-export const CarouselImage = styled.img``;
+export const CarouselImage = styled.img`
+  height: 555px;
+  width: 100%;
+`;
 
 export const CarouselTextContainer = styled.div`
   width: 100%;

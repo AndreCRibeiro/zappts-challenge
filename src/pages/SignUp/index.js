@@ -6,7 +6,10 @@ import { setLocale } from 'yup';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import Google from '../../assets/Img/google.svg';
-import Data from '../../assets/Img/Data.png';
+import Image1 from '../../assets/Img/Data.png';
+import Image2 from '../../assets/Img/image.svg';
+import Image3 from '../../assets/Img/image2.svg';
+import Image4 from '../../assets/Img/image3.svg';
 import Carousel from '../../components/Carousel';
 
 import {
@@ -48,7 +51,12 @@ const SignUp = () => {
   return (
     <Container>
       <ImageContainer>
-        <Carousel image1={Data} image2={Data} image3={Data} image4={Data} />
+        <Carousel
+          image1={Image1}
+          image2={Image2}
+          image3={Image3}
+          image4={Image4}
+        />
       </ImageContainer>
       <RightContainer>
         <FormContainer>

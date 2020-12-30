@@ -14,7 +14,9 @@ import {
 const settings = {
   dots: true,
   infinite: true,
-  speed: 500,
+  autoplay: true,
+  autoplaySpeed: 3500,
+  speed: 300,
   slidesToShow: 1,
   slidesToScroll: 1,
 };
@@ -52,7 +54,7 @@ const Carousel = (data) => {
           <CarouselImage src={data.image3} alt={data} />
         </CarouselImageContainer>
         <CarouselTextContainer>
-          <CarouselHeader>Marcenas mattis egestas</CarouselHeader>
+          <CarouselHeader>What is Lorem Ipsum</CarouselHeader>
           <CarouselText>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industrys standard dummy text
