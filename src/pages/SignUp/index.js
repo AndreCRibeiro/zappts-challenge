@@ -1,10 +1,9 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import { Link } from 'react-router-dom';
-import * as Yup from 'yup';
-import { setLocale } from 'yup';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
+import { schema } from './validation';
 import Google from '../../assets/Img/google.svg';
 import Image1 from '../../assets/Img/Data.png';
 import Image2 from '../../assets/Img/image.svg';
@@ -26,20 +25,6 @@ import {
   BottomContainer,
   TermsContainer,
 } from './styles';
-
-setLocale({
-  mixed: {
-    default: 'Não é válido',
-  },
-});
-
-const schema = Yup.object().shape({
-  name: Yup.string().required('Nome é obrigatório'),
-  email: Yup.string().email('Email inválido').required('Email é obrigatório'),
-  password: Yup.string()
-    .required('Senha é obrigatória')
-    .min(6, 'Senha muito curta, mínimo 6 caracteres'),
-});
 
 const SignUp = () => {
   const { register, handleSubmit, errors } = useForm({
