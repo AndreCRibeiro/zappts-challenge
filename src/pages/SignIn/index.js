@@ -31,9 +31,8 @@ const SignIn = () => {
     resolver: yupResolver(schema),
   });
 
-  const onSubmit = (data) => {
-    console.log({ data });
-    toast.success('Usuário cadastrado com sucesso!!', {
+  const onSubmit = () => {
+    toast.success('Usuário fez login com sucesso!!', {
       position: toast.POSITION.TOP_CENTER,
     });
   };

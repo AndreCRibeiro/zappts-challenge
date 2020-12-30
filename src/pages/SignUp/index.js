@@ -32,8 +32,7 @@ const SignUp = () => {
     resolver: yupResolver(schema),
   });
 
-  const onSubmit = (data) => {
-    console.log({ data });
+  const onSubmit = () => {
     toast.success('Usuário cadastrado com sucesso!!', {
       position: toast.POSITION.TOP_CENTER,
     });
