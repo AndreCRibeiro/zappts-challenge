@@ -17,6 +17,38 @@ export const SliderTeste = styled(Slider)`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0.5rem 0;
+
+    list-style-type: none;
+
+    li {
+      margin: 0 0.2rem;
+    }
+
+    button {
+      display: block;
+      width: 0.65rem;
+      height: 0.65rem;
+      padding: 0;
+
+      border: none;
+      border-radius: 100%;
+      background-color: rgba(255, 255, 255, 0.6);
+
+      text-indent: -9999px;
+    }
+
+    li.slick-active button {
+      background-color: #fff;
+      width: 0.7rem;
+    }
+  }
 `;
 
 export const ImageContainer = styled.div`

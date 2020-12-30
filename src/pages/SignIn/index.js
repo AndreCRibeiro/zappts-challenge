@@ -51,9 +51,6 @@ const SignIn = () => {
 
   const onSubmit = (data) => console.log(data);
 
-  console.log({ errors });
-  console.log(errors.password?.message);
-
   const settings = {
     dots: true,
     infinite: true,
@@ -65,6 +62,18 @@ const SignIn = () => {
     <Container>
       <ImageContainer>
         <SliderTeste {...settings} arrows={false}>
+          <CarouselContainer>
+            <CarouselImageContainer>
+              <CarouselImage src={Data} alt={Data} />
+            </CarouselImageContainer>
+            <CarouselTextContainer>
+              <CarouselHeader>Marcenas mattis egestas</CarouselHeader>
+              <CarouselText>
+                Erdum et malesuada fames ac ante ileum primmer in faucibus
+                uspendisse porta.
+              </CarouselText>
+            </CarouselTextContainer>
+          </CarouselContainer>
           <CarouselContainer>
             <CarouselImageContainer>
               <CarouselImage src={Data} alt={Data} />
