@@ -103,11 +103,11 @@ const SignUp = () => {
             <p>By signing up, you agree to </p>
             <b>Invision</b>
           </TermsContainer>
-          <BottomContainer>
+          <TermsContainer last>
             <a href="">Terms of Conditions</a>
             <p>and</p>
             <a href="">Privacy Policy</a>
-          </BottomContainer>
+          </TermsContainer>
           <BottomContainer last>
             <p>Already on</p>
             <b>Invision?</b>
@@ -115,6 +115,16 @@ const SignUp = () => {
           </BottomContainer>
         </FormContainer>
       </RightContainer>
+      {isTabletOrMobile && (
+        <ImageContainer>
+          <Carousel
+            image1={Image1}
+            image2={Image2}
+            image3={Image3}
+            image4={Image4}
+          />
+        </ImageContainer>
+      )}
     </Container>
   );
 };

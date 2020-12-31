@@ -8,6 +8,10 @@ export const SliderTeste = styled(Slider)`
   align-items: center;
   justify-content: center;
 
+  @media only screen and (max-width: 1224px) {
+    height: 100%;
+  }
+
   .slick-dots {
     display: flex;
     justify-content: center;
@@ -16,6 +20,10 @@ export const SliderTeste = styled(Slider)`
     padding: 0.5rem 0;
 
     list-style-type: none;
+
+    @media only screen and (max-width: 1224px) {
+      padding: 3rem 0;
+    }
 
     li {
       margin: 0 0.2rem;
@@ -59,6 +67,10 @@ export const CarouselImageContainer = styled.div`
 
 export const CarouselImage = styled.img`
   height: 555px;
+
+  @media only screen and (max-width: 1224px) {
+    height: 180px;
+  }
 `;
 
 export const CarouselTextContainer = styled.div`
@@ -68,6 +80,10 @@ export const CarouselTextContainer = styled.div`
   justify-content: center;
   flex-direction: column;
   margin-top: 10px;
+
+  @media only screen and (max-width: 1224px) {
+    margin-top: 3px;
+  }
 `;
 
 export const CarouselHeader = styled.p`
@@ -75,6 +91,11 @@ export const CarouselHeader = styled.p`
   font-family: Muli;
   font-size: 30px;
   margin-top: 25px;
+
+  @media only screen and (max-width: 1224px) {
+    font-size: 20px;
+    margin-top: 15px;
+  }
 `;
 
 export const CarouselText = styled.small`
@@ -89,4 +110,10 @@ export const CarouselText = styled.small`
   display: -webkit-box;
   -webkit-line-clamp: 2; /* number of lines to show */
   -webkit-box-orient: vertical;
+
+  @media only screen and (max-width: 1224px) {
+    font-size: 15px;
+    margin-top: 8px;
+    width: 80%;
+  }
 `;

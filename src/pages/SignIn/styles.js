@@ -8,6 +8,11 @@ export const Container = styled.div`
   flex: 1;
   width: 100vw;
   height: 100vh;
+
+  @media only screen and (max-width: 1224px) {
+    flex-direction: column;
+    height: 100%;
+  }
 `;
 
 export const ImageContainer = styled.div`
@@ -17,6 +22,11 @@ export const ImageContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media only screen and (max-width: 1224px) {
+    width: 100%;
+    height: 60vh;
+  }
 `;
 
 export const RightContainer = styled.div`
@@ -29,6 +39,7 @@ export const RightContainer = styled.div`
 
   @media only screen and (max-width: 1224px) {
     width: 100%;
+    height: 90vh;
   }
 `;
 
@@ -47,6 +58,10 @@ export const Title = styled.h1`
   font-family: Avenir;
   align-self: flex-end;
   margin-bottom: 20px;
+
+  @media only screen and (max-width: 1224px) {
+    margin: 10px 0px 5px 0px;
+  }
 `;
 
 export const Form = styled.form`
@@ -136,13 +151,17 @@ export const DividerContainer = styled.div`
     background: rgba(112, 112, 112, 0.3);
     display: flex;
     width: 25%;
+
+    @media only screen and (max-width: 1224px) {
+      width: 50%;
+    }
   }
 
   p {
     font-size: 14px;
     color: rgba(112, 112, 112, 0.8);
     margin: 0px 10px 0px 10px;
-    font-family: normal normal normal 14px/18px Muli;
+    font-family: Muli;
   }
 `;
 
@@ -160,6 +179,10 @@ export const GoogleButton = styled.button.attrs(() => ({
   justify-content: center;
   align-items: center;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+
+  @media only screen and (max-width: 1224px) {
+    height: 45px;
+  }
 
   img {
     margin: 0px 10px 0px 10px;

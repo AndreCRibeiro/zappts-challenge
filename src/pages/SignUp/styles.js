@@ -8,6 +8,11 @@ export const Container = styled.div`
   flex: 1;
   width: 100vw;
   height: 100vh;
+
+  @media only screen and (max-width: 1224px) {
+    flex-direction: column;
+    height: 100%;
+  }
 `;
 
 export const ImageContainer = styled.div`
@@ -17,6 +22,11 @@ export const ImageContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media only screen and (max-width: 1224px) {
+    width: 100%;
+    height: 60vh;
+  }
 `;
 
 export const RightContainer = styled.div`
@@ -29,6 +39,7 @@ export const RightContainer = styled.div`
 
   @media only screen and (max-width: 1224px) {
     width: 100%;
+    height: 95vh;
   }
 `;
 
@@ -49,7 +60,7 @@ export const Title = styled.h1`
   padding: 0px 15px 10px 0px;
 
   @media only screen and (max-width: 1224px) {
-    padding: 10px 15px 10px 0px;
+    padding: 15px 15px 5px 0px;
   }
 `;
 
@@ -59,6 +70,10 @@ export const Form = styled.form`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media only screen and (max-width: 1224px) {
+    margin-top: 1px;
+  }
 
   h1 {
     color: #707070;
@@ -129,13 +144,17 @@ export const DividerContainer = styled.div`
     background: rgba(112, 112, 112, 0.3);
     display: flex;
     width: 25%;
+
+    @media only screen and (max-width: 1224px) {
+      width: 50%;
+    }
   }
 
   p {
     font-size: 14px;
     color: rgba(112, 112, 112, 0.8);
     margin: 0px 10px 0px 10px;
-    font-family: normal normal normal 14px/18px Muli;
+    font-family: Muli;
   }
 `;
 
@@ -145,7 +164,7 @@ export const GoogleButton = styled.button.attrs(() => ({
   background: #eee;
   border: 0;
   padding: 0 15px;
-  margin: 0px 0px 3px 10px;
+  margin: 0px 0px 20px 10px;
   border-radius: 50px;
   height: 45px;
 
@@ -153,6 +172,10 @@ export const GoogleButton = styled.button.attrs(() => ({
   justify-content: center;
   align-items: center;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+
+  @media only screen and (max-width: 1224px) {
+    height: 45px;
+  }
 
   img {
     margin: 0px 10px 0px 10px;
@@ -171,11 +194,16 @@ export const TermsContainer = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  margin: 30px 0px 0px 0px;
+  margin-top: ${(props) => (props.last ? '20px 0px 0px 0px' : '0px')};
+
+  @media only screen and (max-width: 1224px) {
+    width: 400px;
+  }
 
   a {
     color: rgba(169, 197, 186, 0.8);
     font-size: 14px;
+    margin: 0px 4px 0px 4px;
 
     &:hover {
       color: rgba(169, 197, 186, 1);
@@ -202,12 +230,11 @@ export const BottomContainer = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  margin: ${(props) => (props.last ? '30px 0px 30px 0px' : '0px')};
+  margin: 20px 0px 8px 0px;
 
   a {
     color: rgba(169, 197, 186, 0.8);
     font-size: 14px;
-    margin: 0px 4px 0px 4px;
 
     &:hover {
       color: rgba(169, 197, 186, 1);
@@ -223,7 +250,7 @@ export const BottomContainer = styled.div`
   b {
     font-size: 14px;
     color: #707070;
-    margin: 0px 1px 0px 4px;
+    margin: 0px 3px 0px 4px;
     font-family: Muli;
   }
 `;

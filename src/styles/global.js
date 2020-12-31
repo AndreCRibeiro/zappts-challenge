@@ -20,15 +20,13 @@ export default createGlobalStyle`
   body, input {
     color: #000;
     font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    font: normal normal normal 16px/20px Muli;
+    font-family: Muli;
   }
 
   button {
     color: #FFF;
     font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    font: normal normal bold 16px/20px Muli;
+    font-family: Muli;
     cursor: pointer;
   }
 `;
