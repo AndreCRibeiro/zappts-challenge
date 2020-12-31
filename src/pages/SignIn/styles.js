@@ -196,7 +196,7 @@ export const GoogleButton = styled.button.attrs(() => ({
 `;
 
 export const BottomContainer = styled.div`
-  width: 65%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
